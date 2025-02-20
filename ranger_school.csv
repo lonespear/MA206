@@ -1,4 +1,4 @@
-Record Number,mdl_raw,mdl_points,spr_raw,spr_points,hrpu_raw,hpru_points,sdc_raw,sdc_points,plk_points,x2mr_raw,x2mr_points,rpa_pushups_raw,rpa_situps_raw,rpa_5mi_sec,rpa_pullups_raw,ln_score,acft_points,rpa_points,12mRuck_min,age,hgt_in,wt_lb,bmi,State,gender,Ranger_tab
+Record Number,mdl_raw,mdl_points,spr_raw,spr_points,hrpu_raw,hpru_points,sdc_raw,sdc_points,plk_points,x2mr_raw,x2mr_points,rpa_pushups_raw,rpa_situps_raw,rpa_5mi_sec,rpa_pullups_raw,ln_score,acft_points,rpa_points,ruck_min,age,hgt_in,wt_lb,bmi,State,gender,Ranger_tab
 1,240,78,8,75,42,82,87,100,100,727,100,100,100,2018,20,10,535,364,135,28,71,170,23,AK,1,1
 2,340,100,11,93,41,81,92,100,94,900,89,84,93,2054,170,10,557,331,136,21,71,242,32,AK,1,1
 3,170,64,5,62,10,60,103,80,60,925,87,54,82,1448,1,8,413,327,182,26,67,148,23,AK,0,1
