@@ -139,8 +139,9 @@ with tab1:
         Here is where we arrive at our evaluating the strength of our argument. Based on our standardized statistic, 
         a p-value of 0.258 is calculated. Remembering our definition of p-value to be:
         ***The probability of rejecting the null hypothesis when it is actually true,*** we should *fail to reject* 
-        the null hypothesis in this example, as we would be wrong on average around 26\% of the time with this conclusion.
-        This is how you should think about assessing p-values, yes traditionally we use the confidence level $\\alpha=0.05$,
+        the null hypothesis in this example. A p-value of 0.258 means: If the null hypothesis were true, there is about a 26% chance of seeing data this extreme (or more extreme) just by random variation.
+Put another way, about 1 in 4 times we’d see evidence that looks as “convincing” against the null as what we just observed, even though the null is actually true.
+        This is how you should think about assessing p-values, yes traditionally we use the significance level $\\alpha=0.05$,
         meaning we will **reject the null hypothesis** when we have a p-value less than 0.05, however it is entirely dependent on
         the given field of study and what weight the decision brings.    
     """)
