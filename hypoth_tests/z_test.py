@@ -376,7 +376,7 @@ with tab2:
 
     if "Right" in tail:
         z_crit = norm.ppf(1 - alpha)
-        xx = np.linspace(z_crit, 3.5, 200)
+        xx = np.linspace(z, 3.5, 200)
         yy = norm.pdf(xx)
         ax.fill_between(xx, yy, alpha=0.4, color='red')
         ax.axvline(z, color="green", linestyle="--", label="Observed Z")
@@ -384,7 +384,7 @@ with tab2:
 
     elif "Left" in tail:
         z_crit = norm.ppf(alpha)
-        xx = np.linspace(-3.5, z_crit, 200)
+        xx = np.linspace(-3.5, z, 200)
         yy = norm.pdf(xx)
         ax.fill_between(xx, yy, alpha=0.4, color='red')
         ax.axvline(z, color="green", linestyle="--", label="Observed Z")
@@ -393,10 +393,10 @@ with tab2:
     else:  # Two-tailed
         z_crit = norm.ppf(1 - alpha/2)
         # Shade right tail
-        xx = np.linspace(z_crit, 3.5, 200)
+        xx = np.linspace(z, 3.5, 200)
         ax.fill_between(xx, norm.pdf(xx), alpha=0.4, color='red')
         # Shade left tail
-        xx = np.linspace(-3.5, -z_crit, 200)
+        xx = np.linspace(-3.5, -z, 200)
         ax.fill_between(xx, norm.pdf(xx), alpha=0.4, color='red')
         ax.axvline(z, color="green", linestyle="--", label="Observed Z")
         ax.axvline(z_crit, color='pink', linestyle="--", label=f"Z*={z_crit:.2f}")
