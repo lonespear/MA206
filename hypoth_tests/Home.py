@@ -281,28 +281,7 @@ Estimates the **mean difference** $\\mu_d$.
 # Global controls / session init
 # -------------------------
 st.divider()
-st.subheader("Global Controls")
 
-col1, col2 = st.columns(2)
-
-with col1:
-    default_mean = st.number_input("Default population mean (μ) for demos", value=75.0, key="global_mean_input")
-    if "global_mean" not in st.session_state:
-        st.session_state.global_mean = default_mean
-    if st.button("Apply default μ to all pages", key="apply_global_mean"):
-        st.session_state.global_mean = default_mean
-        st.success(f"Set global mean to μ = {default_mean:.2f}")
-
-with col2:
-    if st.button("🔄 Reset app state (new datasets on pages)", key="reset_state"):
-        for k in list(st.session_state.keys()):
-            if k != "global_mean":
-                del st.session_state[k]
-        st.session_state.dataset_seed = secrets.randbits(32)
-        st.toast("State cleared. Pages will regenerate data.", icon="✅")
-        time.sleep(0.2)
-
-st.divider()
 with st.expander("About this app"):
     st.markdown(
         """
