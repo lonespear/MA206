@@ -9,6 +9,8 @@ st.set_page_config(
     layout="centered"
 )
 
+st.sidebar.title("MA206 Inference App")
+
 st.title("MA206: Probability & Statistics")
 st.subheader("Hypothesis Testing and Confidence Intervals")
 
