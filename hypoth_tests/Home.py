@@ -9,7 +9,23 @@ st.set_page_config(
     layout="centered"
 )
 
-st.sidebar.title("MA206 Inference App")
+st.markdown(
+    """
+    <style>
+    /* Add a title at the very top of the sidebar */
+    section[data-testid="stSidebar"] .css-1d391kg::before {
+        content: "📘 MA206 Inference App";
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        padding: 1rem 1rem 0.5rem 1rem;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 0.5rem;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("MA206: Probability & Statistics")
 st.subheader("Hypothesis Testing and Confidence Intervals")
