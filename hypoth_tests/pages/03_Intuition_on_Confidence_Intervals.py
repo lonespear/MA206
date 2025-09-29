@@ -11,7 +11,7 @@ with colA:
     n = st.slider("Sample size (n)", 10, 400, 30, step=1)
     conf = st.slider("Confidence level (%)", 80, 99, 95, step=1)
 with colB:
-    reps = st.slider("Number of intervals", 10, 300, 80, step=5)
+    reps = st.slider("Number of intervals", 10, 300, 30, step=5)
     speed = st.slider("Animation speed (sec/frame)", 0.02, 0.5, 0.12)
 with colC:
     seed = st.number_input("Resampling seed", min_value=0, value=206, step=1)
